@@ -26,9 +26,11 @@
     },
     "./package.json": "./package.json"
   },
-  "dependencies": {
+  "catalog": {
     "react": "^19.2.3",
-    "react-dom": "^19.2.3",
+    "react-dom": "^19.2.3"
+  },
+  "dependencies": {
     "@jared-m/counter": "workspace:*"
   },
   "devDependencies": {
