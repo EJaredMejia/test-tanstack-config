@@ -11,8 +11,8 @@ publish({
   },
   packages: [
     {
-      name: "@jared-m/tanstack-config",
-      packageDir: "./",
+      name: "@jared-m/counter",
+      packageDir: "./packages/counter",
     },
   ],
   rootDir: "./",

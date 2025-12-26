@@ -3,14 +3,16 @@
   "private": false,
   "version": "0.0.0",
   "type": "module",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "dev": "vite",
-    "build": "vite build && publint --strict",
-    "lint": "eslint .",
-    "preview": "vite preview",
+    "build": "bun --filter './packages/*' build",
     "ci:publish": "bun run scripts/publish.ts"
   },
+  "workspaces": [
+    "packages/*"
+  ],
   "exports": {
     ".": {
       "import": {
@@ -26,7 +28,8 @@
   },
   "dependencies": {
     "react": "^19.2.3",
-    "react-dom": "^19.2.3"
+    "react-dom": "^19.2.3",
+    "@jared-m/counter": "workspace:*"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.2",
