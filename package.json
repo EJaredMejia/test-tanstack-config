@@ -55,5 +55,8 @@
   },
   "overrides": {
     "vite": "npm:rolldown-vite@7.2.5"
+  },
+  "patchedDependencies": {
+    "@tanstack/publish-config@0.2.2": "patches/@tanstack%2Fpublish-config@0.2.2.patch"
   }
 }
