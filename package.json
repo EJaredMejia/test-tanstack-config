@@ -1,0 +1,54 @@
+{
+  "name": "@jared-m/tanstack-config",
+  "private": false,
+  "version": "0.0.0",
+  "type": "module",
+  "files": ["dist"],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && publint --strict",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "ci:publish": "bun run scripts/publish.ts"
+  },
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/esm/index.d.ts",
+        "default": "./dist/esm/index.js"
+      },
+      "require": {
+        "types": "./dist/cjs/index.d.cts",
+        "default": "./dist/cjs/index.cjs"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "dependencies": {
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "@tanstack/eslint-config": "^0.3.4",
+    "@tanstack/publish-config": "^0.2.2",
+    "@tanstack/vite-config": "^0.4.3",
+    "@types/node": "^25.0.3",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.2",
+    "ajv": "^8.17.1",
+    "babel-plugin-react-compiler": "^1.0.0",
+    "eslint": "^9.39.2",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.26",
+    "globals": "^16.5.0",
+    "publint": "^0.3.16",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.50.1",
+    "vite": "npm:rolldown-vite@7.2.5"
+  },
+  "overrides": {
+    "vite": "npm:rolldown-vite@7.2.5"
+  }
+}
