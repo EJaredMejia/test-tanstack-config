@@ -3,6 +3,10 @@
   "private": false,
   "version": "0.0.1",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EJaredMejia/test-tanstack-config.git"
+  },
   "files": [
     "dist"
   ],
