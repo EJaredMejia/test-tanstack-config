@@ -1,42 +1,42 @@
 {
-  "name": "@jared-m/counter",
-  "version": "0.0.2",
-  "author": "EJaredMejia",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/EJaredMejia/test-tanstack-config.git",
-    "directory": "packages/counter"
-  },
-  "scripts": {
-    "build": "vite build"
-  },
-  "type": "module",
-  "types": "dist/esm/index.d.ts",
-  "main": "dist/cjs/index.cjs",
-  "module": "dist/esm/index.js",
-  "exports": {
-    ".": {
-      "import": {
-        "types": "./dist/esm/index.d.ts",
-        "default": "./dist/esm/index.js"
-      },
-      "require": {
-        "types": "./dist/cjs/index.d.cts",
-        "default": "./dist/cjs/index.cjs"
-      }
+    "name": "@jared-m/counter",
+    "version": "0.0.2",
+    "author": "EJaredMejia",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/EJaredMejia/test-tanstack-config.git",
+        "directory": "packages/counter"
     },
-    "./package.json": "./package.json"
-  },
-  "files": [
-    "dist",
-    "src"
-  ],
-  "engines": {
-    "node": ">=18"
-  },
-  "dependencies": {
-    "react": "catalog:",
-    "react-dom": "catalog:"
-  }
+    "scripts": {
+        "build": "vite build"
+    },
+    "type": "module",
+    "types": "dist/esm/index.d.ts",
+    "main": "dist/cjs/index.cjs",
+    "module": "dist/esm/index.js",
+    "exports": {
+        ".": {
+            "import": {
+                "types": "./dist/esm/index.d.ts",
+                "default": "./dist/esm/index.js"
+            },
+            "require": {
+                "types": "./dist/cjs/index.d.cts",
+                "default": "./dist/cjs/index.cjs"
+            }
+        },
+        "./package.json": "./package.json"
+    },
+    "files": [
+        "dist",
+        "src"
+    ],
+    "engines": {
+        "node": ">=18"
+    },
+    "peerDependencies": {
+        "react": ">=18.0.0 || >=19.0.0",
+        "react-dom": ">=18.0.0 || >=19.0.0"
+    }
 }
